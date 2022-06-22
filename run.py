@@ -3,6 +3,11 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
 
+def menu():
+    print('[0]Rock/Paper/Scissors')
+    print('[1] option 2')
+    print('[2] option 3')
+
 player_score = 0
 computer_score = 0
 choices = ['rock', 'paper', 'scissors']
