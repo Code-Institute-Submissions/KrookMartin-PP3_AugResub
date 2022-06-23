@@ -5,7 +5,7 @@ import random
 
 def menu():
     print('[1] Rock/Paper/Scissors')
-    print('[2] option 2')
+    print('[2] Know your Nintendo')
     print('[3] option 3')
     print('[0] end program')
 
@@ -53,4 +53,44 @@ while option != 0:
         print('Final score computer:', computer_score)
         print('Thank you for playing, have a nice day!')
         menu()
-#elif option == 1:
+        option = int(input('Enter the number of the game you want to play '))
+    
+    elif option == 2:
+        print('Welcome to know your Nintendo')
+        start_game = input('Start game? yes/no?')
+        if start_game != 'yes':
+            print('goodbye!')
+            menu()
+            
+        
+        print('Game on!')
+        
+        question = input('Whats the name of Marios brother?')
+        if question == 'Luigi':
+            print('Correct')
+        else: 
+            print('Incorrect') 
+
+        question = input('Whats the name of Super Marios brother?')
+        if question == 'Luigi':
+            print('Correct')
+        else: 
+            print('Incorrect')     
+
+        question = input('What is the name of the protagonist in Metal Gear?')
+        if question == 'Snake':
+            print('Correct')
+        else: 
+            print('Incorrect')     
+
+        question = input('Whats the name of Marios brother?')
+        if question == 'Luigi':
+            print('Correct')
+        else: 
+            print('Incorrect')     
+
+        question = input('Whats the name of Marios brother?')
+        if question == 'Luigi':
+            print('Correct')
+        else: 
+            print('Incorrect')     
