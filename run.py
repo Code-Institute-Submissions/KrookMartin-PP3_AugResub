@@ -83,14 +83,14 @@ while option != 0:
         else: 
             print('Incorrect')     
 
-        question = input('Whats the name of Marios brother?')
-        if question == 'Luigi':
+        question = input('What is the name of Super Marios nemesis?')
+        if question == 'Bowser':
             print('Correct')
         else: 
             print('Incorrect')     
 
-        question = input('Whats the name of Marios brother?')
-        if question == 'Luigi':
+        question = input('What is the name of the protagonist in Zelda?')
+        if question == 'Link':
             print('Correct')
         else: 
             print('Incorrect')     
