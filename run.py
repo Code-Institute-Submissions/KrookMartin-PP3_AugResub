@@ -4,17 +4,6 @@
 import random
 
 
-def menu():
-    """Askign user to select a game to play """
-    print('[1] Rock/Paper/Scissors')
-    print('[2] Know your Nintendo')
-    print('[3] option 3')
-    print('[0] end program')
-
-
-menu()
-
-
 def rpsgame():
     player_score = 0
     computer_score = 0
@@ -26,6 +15,7 @@ def rpsgame():
         print('Final score computer:', computer_score)
         print('Thank you for playing, have a nice day!')
         menu()
+
     elif p_choice in choices:
         random_choice = random.randint(0, 2)
 
@@ -49,51 +39,46 @@ def rpsgame():
             computer_score += 1
     else:
         print('Please enter rock/papper or scissor')
-                
-    #print('Final score player:', player_score)
-    #print('Final score computer:', computer_score)
-    #print('Thank you for playing, have a nice day!')
-    #menu()
 
 
 def quiz():
     print('Welcome to know your Nintendo')
-    start_game = input('Start game? yes/no?')
+    start_game = input('Start game? yes/no? ')
     if start_game != 'yes':
         print('goodbye!')
         menu()
     else:
         print('Game on!')
 
-        question = input('Whats the name of Super Marios brother?')
+        question = input('Whats the name of Super Marios brother? ')
         if question == 'Luigi':
             print('Correct')
         else: 
-            print('Incorrect')     
+            print('Incorrect, the correct answer is Luigi')
 
-    question = input('What is the name of the protagonist in Metal Gear?')
+    question = input('What is the name of the protagonist in Metal Gear? ')
     if question == 'Snake':
         print('Correct')
     else: 
-        print('Incorrect')     
+        print('Incorrect, the correct answer is Snake')
 
-    question = input('What is the name of Super Marios nemesis?')
+    question = input('What is the name of Super Marios nemesis? ')
     if question == 'Bowser':
         print('Correct')
     else: 
-        print('Incorrect')     
+        print('Incorrect, the correct answer is Bowser')    
 
-    question = input('What is the name of the protagonist in Zelda?')
+    question = input('What is the name of the protagonist in Zelda? ')
     if question == 'Link':
         print('Correct')
     else:
-        print('Incorrect')
-        
-    question = input('What color is the original megaman?')
+        print('Incorrect, the correct answer is Link')
+       
+    question = input('What color is the original megaman? ')
     if question == 'Blue':
         print('Correct')
     else:
-        print('Incorrect')
+        print('Incorrect, the correct answer is Blue')
 
 
 def game_selector():
@@ -105,4 +90,14 @@ def game_selector():
             quiz()
 
 
-game_selector()
+def menu():
+    """Askign user to select a game to play """
+    print('Welcome to the low-tech time killer')
+    print('[1] Rock/Paper/Scissors')
+    print('[2] Know your Nintendo')
+    print('[3] option 3')
+    print('[0] end program')
+    game_selector()
+
+
+menu()
