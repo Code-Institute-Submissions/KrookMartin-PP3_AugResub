@@ -90,6 +90,19 @@ def quiz():
     print('Thanks for playing you got ' + str(player_score) + 'points')
 
 
+def magic_ball():
+    answer = ['Yes!', 'No', 'Maybe', 'Think about it i must', 'It depends'] 
+
+    while str(input('Ask the Magic 8Ball? yes or no ')).lower() != 'no':
+        str(input('What is your question? '))
+    # Need to return a random answer
+        random_answer = answer[random.randint(0, len(answer) - 1)]
+        print(random_answer)
+
+    print("Good Bye")
+    menu()
+
+
 def game_selector():
     option = int(input('Enter the number of the game you want to play '))
     while option != 0:
@@ -97,6 +110,10 @@ def game_selector():
             rpsgame()
         elif option == 2:
             quiz()
+        elif option == 3:
+            magic_ball()
+        else:
+            quit()
 
 
 def menu():
@@ -104,7 +121,7 @@ def menu():
     print('Welcome to the low-tech time killer')
     print('[1] Rock/Paper/Scissors')
     print('[2] Know your Nintendo')
-    print('[3] option 3')
+    print('[3] Magic eightball')
     print('[0] end program')
     game_selector()
 
