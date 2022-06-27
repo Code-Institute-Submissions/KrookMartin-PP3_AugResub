@@ -44,41 +44,50 @@ def rpsgame():
 def quiz():
     print('Welcome to know your Nintendo')
     start_game = input('Start game? yes/no? ')
-    if start_game != 'yes':
+    player_score = 0
+    if start_game.lower() != 'yes':
         print('goodbye!')
         menu()
     else:
         print('Game on!')
+        player_score = 0
 
         question = input('Whats the name of Super Marios brother? ')
-        if question == 'Luigi':
+        if question.lower() == 'luigi':
+            player_score += 1
             print('Correct')
         else: 
-            print('Incorrect, the correct answer is Luigi')
+            print('Incorrect, the correct answer is luigi')
 
-    question = input('What is the name of the protagonist in Metal Gear? ')
-    if question == 'Snake':
-        print('Correct')
-    else: 
-        print('Incorrect, the correct answer is Snake')
+        question = input('What is the name of the protagonist in Metal Gear? ')
+        if question.lower() == 'snake':
+            player_score += 1
+            print('Correct')
+        else: 
+            print('Incorrect, the correct answer is snake')
 
-    question = input('What is the name of Super Marios nemesis? ')
-    if question == 'Bowser':
-        print('Correct')
-    else: 
-        print('Incorrect, the correct answer is Bowser')    
+        question = input('What is the name of Super Marios nemesis? ')
+        if question.lower() == 'bowser':
+            player_score += 1
+            print('Correct')
+        else: 
+            print('Incorrect, the correct answer is bowser')    
 
-    question = input('What is the name of the protagonist in Zelda? ')
-    if question == 'Link':
-        print('Correct')
-    else:
-        print('Incorrect, the correct answer is Link')
-       
-    question = input('What color is the original megaman? ')
-    if question == 'Blue':
-        print('Correct')
-    else:
-        print('Incorrect, the correct answer is Blue')
+        question = input('What is the name of the protagonist in Zelda? ')
+        if question.lower() == 'link':
+            player_score += 1
+            print('Correct')
+        else:
+            print('Incorrect, the correct answer is link')
+        
+        question = input('What color is the original megaman? ')
+        if question.lower() == 'blue':
+            player_score += 1
+            print('Correct')
+        else:
+            print('Incorrect, the correct answer is blue')
+
+    print('Thanks for playing you got ' + str(player_score) + 'points')
 
 
 def game_selector():
