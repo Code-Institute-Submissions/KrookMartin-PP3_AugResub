@@ -32,7 +32,7 @@ The main menu provides the choice of four diffrent options and the player simply
 The rock/paper/scissors is a take on the classic. The player gets to choose first and then the computer randomly picks one of the three options. The game compares the
 input from the user with the computer and decides who wins and updates the score value accordingly. If the player and computer have made the same choice the 
 game simply prints "draw" and the player gets to pick again.
-
+![rpsimg](https://user-images.githubusercontent.com/93250649/176152802-f669f52e-d794-4654-b99a-4103555f5244.JPG)
 
 ### Know your Nintendo
 Know your Nintendo is a small quiz game with questions taken from the world or Nintendo. If the player get the answer correct a score variable is updated and if 
