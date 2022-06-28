@@ -42,6 +42,8 @@ the player get the answer wrong a the correct answer is presented to the player.
 
 ### Magic eightball 
 The Magic eightball game is a game where the player gets to ask the eightball any question and gets presented a random answer from a pre-written list. There is no win condition to this game, its simply a silly way to kill some time. 
+![eightballimg](https://user-images.githubusercontent.com/93250649/176153236-ba4443ab-3d67-43ea-bb44-58ff2c9211fd.JPG)
+
 
 ## <a name="section-2"></a> Design
 Since the application is a command line application there has been no consideration about the desing other then making the question and the information presented 
