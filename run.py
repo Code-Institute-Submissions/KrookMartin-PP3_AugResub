@@ -99,6 +99,7 @@ def quiz():
 
 
 def magic_ball():
+    """function to let player ask random question and get a random answer"""
     answer = ['Yes!', 'No', 'Maybe', 'Think about it i must', 'It depends']
 
     while str(input('Ask the Magic 8Ball? yes or no \n')).lower() != 'no':
@@ -112,6 +113,7 @@ def magic_ball():
 
 
 def game_selector():
+    """function to let player choose game or exit application"""
     option = int(input('Enter the number of the game you want to play \n'))
     if option == 0:
         quit()
@@ -121,7 +123,7 @@ def game_selector():
         quiz()
     elif option == 3:
         magic_ball()
-        
+
 
 def menu():
     """Askign user to select a game to play """
