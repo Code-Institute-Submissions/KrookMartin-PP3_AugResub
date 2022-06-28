@@ -12,7 +12,7 @@ def rpsgame():
     choices = ['rock', 'paper', 'scissors']
 
     while True:
-        p_choice = input('Rock/Paper/Scissors or E to end: ').lower()
+        p_choice = input('Rock/Paper/Scissors or E to end: \n').lower()
         if p_choice == "e":
             break
 
@@ -35,6 +35,9 @@ def rpsgame():
             print('Player wins!')
             player_score += 1
 
+        elif p_choice == computer_choice:
+            print('draw')
+
         else:
             print('You lost')
             computer_score += 1
@@ -48,7 +51,7 @@ def rpsgame():
 def quiz():
     """Quiz game that ask for user inputs in form of answers"""
     print('Welcome to know your Nintendo')
-    start_game = input('Start game? yes/no? ')
+    start_game = input('Start game? yes/no? \n')
     score = 0
     if start_game.lower() != 'yes':
         print('goodbye!')
@@ -56,50 +59,51 @@ def quiz():
     else:
         print('Game on!')
         
-        question = input('Whats the name of Super Marios brother? ')
+        question = input('Whats the name of Super Marios brother? \n')
         if question.lower() == 'luigi':
             score += 1
             print('Correct')
         else:
             print('Incorrect, the correct answer is luigi')
 
-        question = input('What is the name of the protagonist in Metal Gear? ')
+        question = input('What is the name of the hero in Metal Gear? \n')
         if question.lower() == 'snake':
             score += 1
             print('Correct')
         else:
             print('Incorrect, the correct answer is snake')
 
-        question = input('What is the name of Super Marios nemesis? ')
+        question = input('What is the name of Super Marios nemesis? \n')
         if question.lower() == 'bowser':
             score += 1
             print('Correct')
         else:
             print('Incorrect, the correct answer is bowser')
 
-        question = input('What is the name of the protagonist in Zelda? ')
+        question = input('What is the name of the protagonist in Zelda? \n')
         if question.lower() == 'link':
             score += 1
             print('Correct')
         else:
             print('Incorrect, the correct answer is link')
  
-        question = input('What color is the original megaman? ')
+        question = input('What color is the original megaman? \n')
         if question.lower() == 'blue':
             score += 1
             print('Correct')
         else:
             print('Incorrect, the correct answer is blue')
 
-    print('Thanks for playing you got ' + str(score) + 'points')
+    print('Thanks for playing you got ' + str(score) + ' points')
+    menu()
 
 
 def magic_ball():
     answer = ['Yes!', 'No', 'Maybe', 'Think about it i must', 'It depends']
 
-    while str(input('Ask the Magic 8Ball? yes or no ')).lower() != 'no':
-        str(input('What is your question? '))
-    # Need to return a random answer
+    while str(input('Ask the Magic 8Ball? yes or no \n')).lower() != 'no':
+        str(input('What is your question? \n'))
+    
         random_answer = answer[random.randint(0, len(answer) - 1)]
         print(random_answer)
 
@@ -108,17 +112,16 @@ def magic_ball():
 
 
 def game_selector():
-    option = int(input('Enter the number of the game you want to play '))
-    while option != 0:
-        if option == 1:
-            rpsgame()
-        elif option == 2:
-            quiz()
-        elif option == 3:
-            magic_ball()
-        else:
-            quit()
-
+    option = int(input('Enter the number of the game you want to play \n'))
+    if option == 0:
+        quit()
+    elif option == 1:
+        rpsgame()
+    elif option == 2:
+        quiz()
+    elif option == 3:
+        magic_ball()
+        
 
 def menu():
     """Askign user to select a game to play """
