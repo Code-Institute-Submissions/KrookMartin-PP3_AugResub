@@ -1,31 +1,85 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The low-tech timekiller 
 
-Welcome Martin Krook,
+The low-tech timekiller is an application that provides the user three simple games to choose from a menu. The three diffent games comes in the form of a rock/papper/scissors game, a quiz game and a ask the magic eightball. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+### Content
+[Features](#section-1)
 
-## Reminders
+[Design](#section-2)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+[Technologies Used](#section-3)
 
-## Creating the Heroku app
+[Testing](#section-4)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+[Deployment](#section-5)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+[Credits](#section-6)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+------
 
-Connect your GitHub repository and deploy as normal.
+## <a name="section-1"></a> Features
 
-## Constraints
+### Main menu
+The main menu provides the choice of four diffrent options and the player simply enters the number of the game they want to play or if they want to quit the application.   
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+
+### Rock/Paper/Scissors game 
+The rock/paper/scissors is a take on the classic. The player gets to choose first and then the computer randomly picks one of the three options. The game compares the
+input from the user with the computer and decides who wins and updates the score value accordingly. If the player and computer have made the same choice the 
+game simply prints "draw" and the player gets to pick again.
+
+
+### Know your Nintendo
+Know your Nintendo is a small quiz game with questions taken from the world or Nintendo. If the player get the answer correct a score variable is updated and if 
+the player get the answer wrong a the correct answer is presented to the player. At the end of the game the players total score is presented.
+
+### Magic eightball 
+The Magic eightball game is a game where the player gets to ask the eightball any question and gets presented a random answer from a pre-written list. There is no win condition to this game, its simply a silly way to kill some time. 
+
+## <a name="section-2"></a> Design
+Since the application is a command line application there has been no consideration about the desing other then making the question and the information presented 
+to the player logical and easy to follow.
+
+
+## <a name="section-3"></a> Technologies Used
+### Languages Used
+
+-Python
+
+### Frameworks, Libraries & Programs Used
+
+Git: was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+
+GitHub: is used as the respository for the projects code after being pushed from Git.
+
+
+
+## <a name="section-4"></a> Testing
+Testing done via http://pep8online.com/
+Test presents problems with white space and trailing blank line but no errors and the application works as intended
+
+
+## <a name="section-5"></a> Deployment
+The project was deployed using Code Institute's mock terminal for Heroku.
+ 
+An account was created at Heroku and linked with this github repository.
+
+Under the settings option a config vars a option of PORT with a value of 8000 was added
+
+Two additional buildpacks was added inform of Python and NodeJS
+
+After the settings was updated the project was built and deployed via the deploy option. 
+
+When the app is successfully deplyode we are presented with a link to the application.
+
+ 
+Link to the page: https://low-tech-time-killer.herokuapp.com/
+## <a name="section-6"></a> Credits
+
+### Code
+https://www.youtube.com/c/TechWithTim
+Game logic and inspiration for the rock/paper/scissors game 
+
+
