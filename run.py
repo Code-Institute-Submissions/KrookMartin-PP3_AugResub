@@ -14,6 +14,7 @@ def rpsgame():
             break
 
         if p_choice not in choices:
+            print('invalid option, please enter rock, paper or scissors')
             continue
 
         random_choice = random.randint(0, 2)
