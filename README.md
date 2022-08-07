@@ -1,5 +1,5 @@
 # The low-tech timekiller 
-![mainimgtk](https://user-images.githubusercontent.com/93250649/176152395-c17c26a2-4851-44d6-88e3-0c5d6bca0497.JPG)
+![updatedhero](https://user-images.githubusercontent.com/93250649/183310182-724a805c-b479-4359-abc9-f70265a6e11d.JPG)
 
 The low-tech timekiller is an application that provides the user three simple games to choose from a menu. The three diffent games comes in the form of a rock/papper/scissors game, a quiz game and a ask the magic eightball. 
 
