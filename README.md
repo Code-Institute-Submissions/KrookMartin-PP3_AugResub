@@ -23,7 +23,7 @@ The low-tech timekiller is an application that provides the user three simple ga
 
 ### Main menu
 The main menu provides the choice of four diffrent options and the player simply enters the number of the game they want to play or if they want to quit the application.   
-![mainmenutk](https://user-images.githubusercontent.com/93250649/176152551-fa069f62-8a2f-44d9-9272-f9d47b41d41c.JPG)
+![updatedmainmenu](https://user-images.githubusercontent.com/93250649/183310240-25b691b2-73d4-4495-b068-e446c81449a0.JPG)
 
 
 
