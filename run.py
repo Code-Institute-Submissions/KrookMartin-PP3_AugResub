@@ -98,12 +98,13 @@ def quiz():
 def magic_ball():
     """function to let player ask random question and get a random answer"""
     answer = ['Yes!', 'No', 'Maybe', 'Think about it i must', 'It depends']
-
-    while str(input('Ask the Magic 8Ball? yes or no \n')).lower() != 'no':
+    print('Ask the Magic 8Ball?')
+    while str(input('Press enter to start or no to exit \n')).lower() != 'no':
         str(input('What is your question? \n'))
 
         random_answer = answer[random.randint(0, len(answer) - 1)]
         print(random_answer)
+        print('Ask the Magic 8Ball another question?')
 
     print("Good Bye")
     menu()
