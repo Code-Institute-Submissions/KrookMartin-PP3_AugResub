@@ -49,9 +49,9 @@ def rpsgame():
 def quiz():
     """Quiz game that ask for user inputs in form of answers"""
     print('Welcome to know your Nintendo')
-    start_game = input('Start game? yes/no? \n')
+    start_game = input('Press enter to start or q to quit? \n')
     score = 0
-    if start_game.lower() != 'yes':
+    if start_game.lower() == 'q':
         print('goodbye!')
         menu()
     else:
