@@ -110,24 +110,30 @@ def magic_ball():
 
 def game_selector():
     """function to let player choose game or exit application"""
-    option = int(input('Enter the number of the game you want to play \n'))
-    if option == 0:
+    option = (input('Enter the letter of the game you want to play \n'))
+    option = option.lower()
+    selector = ['a', 'b', 'c', 'q']
+    while option.lower() not in selector:
+        print('invalid input, please enter a,b,c or q')
+        menu()
+
+    if option == 'q':
         quit()
-    elif option == 1:
+    elif option == 'a':
         rpsgame()
-    elif option == 2:
+    elif option == 'b':
         quiz()
-    elif option == 3:
+    elif option == 'c':
         magic_ball()
 
 
 def menu():
     """Askign user to select a game to play """
     print('Welcome to the low-tech time killer')
-    print('[1] Rock/Paper/Scissors')
-    print('[2] Know your Nintendo')
-    print('[3] Magic eightball')
-    print('[0] end program')
+    print('[a] Rock/Paper/Scissors')
+    print('[b] Know your Nintendo')
+    print('[c] Magic eightball')
+    print('[q] end program')
     game_selector()
 
 
