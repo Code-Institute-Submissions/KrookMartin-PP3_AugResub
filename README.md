@@ -38,7 +38,8 @@ game simply prints "draw" and the player gets to pick again.
 ### Know your Nintendo
 Know your Nintendo is a small quiz game with questions taken from the world or Nintendo. If the player get the answer correct a score variable is updated and if 
 the player get the answer wrong a the correct answer is presented to the player. At the end of the game the players total score is presented.
-![nintendoimg](https://user-images.githubusercontent.com/93250649/176153035-fb69933f-8e45-4aa1-ba8b-dc08286bc45b.JPG)
+![updatednintendo](https://user-images.githubusercontent.com/93250649/183310314-5228b06e-b4a7-4e83-a6b2-c7943fb6cfcc.JPG)
+
 
 
 ### Magic eightball 
